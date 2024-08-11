@@ -190,17 +190,17 @@ body {
         /* Mantiene la proporción */
     }
     .mañana {
-        background-image: url(/img/dia-cel.jpg);
+        background-image: url(/img/dia-pc.jpg);
         height: 100%;
         color: black;
     }
     
     .tarde {
-        background-image: url(/img/dia-cel.jpg);
+        background-image: url(/img/dia-pc.jpg);
     }
     
     .noche {
-        background-image: url(/img/noche-cel.jpg);
+        background-image: url(/img/noche-pc.jpg);
         color: black;
         background-size: cover;
         background-repeat: no-repeat;
