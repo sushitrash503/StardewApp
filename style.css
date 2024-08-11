@@ -42,7 +42,7 @@ body {
 
 /* AGREGAR TAREA */
 .agregar-tarea {
-    background-image: url(/img/input.png);
+    background-image: url(/StardewTODO/img/input.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -154,19 +154,18 @@ body {
 
 /* FONDOS POR HORA */
 .mañana {
-    background-image: url(/img/dia-pc.jpg);
+    background-image: url(/StardewTODO/img/dia-pc.jpg);
     color: black;
 }
 
 .tarde {
-    background-image: url(/img/dia-pc.jpg);
+    background-image: url(/StardewTODO/img/dia-pc.jpg);
 }
 
 .noche {
-    background-image: url(/img/noche-pc.png);
+    background-image: url(/StardewTODO/img/noche-pc.png);
     color: black;
     background-size: cover;
-    height: 100%;
     background-repeat: no-repeat;
 }
 
@@ -186,30 +185,31 @@ body {
         margin-left: -15px;
         margin-bottom: 15px;
         background-position: center;
-            
+
         max-width: 100%;  /* Asegura que no se salga del contenedor */
         /* Mantiene la proporción */
     }
     .mañana {
-        background-image: url(/img/dia-pc.jpg);
+        background-image: url(/StardewTODO/img/dia-cel.jpg);
         height: 100%;
         color: black;
     }
     
     .tarde {
-        background-image: url(/img/dia-pc.jpg);
+        background-image: url(/StardewTODO/img/dia-cel.jpg);
     }
     
     .noche {
-        background-image: url(/img/noche.jpg);
+        background-image: url(/StardewTODO/img/noche-pc.png);
         color: black;
         background-size: cover;
+        height: 100%;
         background-repeat: no-repeat;
         height: 100%;
     }
     /* AGREGAR TAREA */
 .agregar-tarea {
-    background-image: url(/img/input.png);
+    background-image: url(/StardewTODO/img/input.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
