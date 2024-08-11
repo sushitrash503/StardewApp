@@ -42,7 +42,7 @@ body {
 
 /* AGREGAR TAREA */
 .agregar-tarea {
-    background-image: url(/StardewTODO/img/input.png);
+    background-image: url(/img/input.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -154,16 +154,16 @@ body {
 
 /* FONDOS POR HORA */
 .mañana {
-    background-image: url(/StardewTODO/img/dia-pc.jpg);
+    background-image: url(/img/dia-pc.jpg);
     color: black;
 }
 
 .tarde {
-    background-image: url(/StardewTODO/img/dia-pc.jpg);
+    background-image: url(/img/dia-pc.jpg);
 }
 
 .noche {
-    background-image: url(/StardewTODO/img/noche-pc.png);
+    background-image: url(/img/noche-pc.png);
     color: black;
     background-size: cover;
     background-repeat: no-repeat;
@@ -190,17 +190,17 @@ body {
         /* Mantiene la proporción */
     }
     .mañana {
-        background-image: url(/StardewTODO/img/dia-cel.jpg);
+        background-image: url(/img/dia-cel.jpg);
         height: 100%;
         color: black;
     }
     
     .tarde {
-        background-image: url(/StardewTODO/img/dia-cel.jpg);
+        background-image: url(/img/dia-cel.jpg);
     }
     
     .noche {
-        background-image: url(/StardewTODO/img/noche-cel.jpg);
+        background-image: url(/img/noche-cel.jpg);
         color: black;
         background-size: cover;
         background-repeat: no-repeat;
@@ -208,7 +208,7 @@ body {
     }
     /* AGREGAR TAREA */
 .agregar-tarea {
-    background-image: url(/StardewTODO/img/input.png);
+    background-image: url(/img/input.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
