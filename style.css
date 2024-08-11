@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px; /* Añade un pequeño padding inferior para espacio al final */
+}
+
+
+/* PERFIL */
+.perfil h1 {
+    color: var(--white);
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#fecha {
+    color: var(--white);
+    padding: 50px 0 5px 0px;
+}
+
+/* AGREGAR TAREA */
+.agregar-tarea {
+    background-image: url(/StardewTODO/img/input.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 95px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none; /* Elimina el borde de enfoque del navegador */
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(83, 61, 61);
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.agregar-tarea i {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* CONSEJO */
+.consejo {
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 150px;
+    display: column; /* Cambiado a flex para alinear el contenido centralizado */
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    margin: 40px 0;
+}
+
+.consejo h3 {
+    position: relative;
+    margin-top: 15px;
+}
+.consejotext {
+    position: relative;
+}
+
+.consejo img {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: contain;
+    max-width: 100%;  /* Asegura que no se salga del contenedor */
+    /* Mantiene la proporción */
+}
+
+/* SECCION DE TAREA */
+.seccion-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--white);
+    margin: 5px 0;
+    background-color: rgb(29, 56, 212);
+    
+}
+
+.seccion-tarea i {
+    font-size: 25px;
+
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+}
+
+.seccion-tarea i:hover {
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
+
+/* FONDOS POR HORA */
+.mañana {
+    background-image: url(/StardewTODO/img/dia-pc.jpg);
+    color: black;
+}
+
+.tarde {
+    background-image: url(/StardewTODO/img/dia-pc.jpg);
+}
+
+.noche {
+    background-image: url(/StardewTODO/img/noche-pc.png);
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*RESPONSIVE*/
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+    .consejo {
+        width: 100%; /* Asegura que el contenedor ocupe el ancho completo en pantallas pequeñas */
+        height: 100px; /* Ajusta la altura para móviles si es necesario */
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+        border-radius: 10px; /* Ajusta el radio del borde para móviles */
+    }
+    .consejo img {
+        
+        position: absolute;
+        margin-left: -15px;
+        margin-bottom: 15px;
+        background-position: center;
+            
+        max-width: 100%;  /* Asegura que no se salga del contenedor */
+        /* Mantiene la proporción */
+    }
+    .mañana {
+        background-image: url(/StardewTODO/img/dia-cel.jpg);
+        height: 100%;
+        color: black;
+    }
+    
+    .tarde {
+        background-image: url(/StardewTODO/img/dia-cel.jpg);
+    }
+    
+    .noche {
+        background-image: url(/StardewTODO/img/noche-cel.jpg);
+        color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    /* AGREGAR TAREA */
+.agregar-tarea {
+    background-image: url(/StardewTODO/img/input.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 100%;
+    height: 95px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin-top: 74px;
+    
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none; /* Elimina el borde de enfoque del navegador */
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(83, 61, 61);
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.agregar-tarea i {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+}
+
+@media (max-width: 480px) {
+    .consejo {
+        height: 80px; /* Ajusta la altura para pantallas muy pequeñas */
+        border-radius: 8px; /* Ajusta el radio del borde para pantallas más pequeñas */
+        padding: 8px; /* Reduce aún más el padding */
+    }
+}
