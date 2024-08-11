@@ -14,7 +14,7 @@
 
 body {
     height: 100vh;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Stardew',sans-serif;
 }
 
 .container {
@@ -24,15 +24,16 @@ body {
     padding-bottom: 20px; /* Añade un pequeño padding inferior para espacio al final */
 }
 
-
 /* PERFIL */
 .perfil h1 {
     color: var(--white);
+    font-size: 45px;
 }
 
 .perfil span {
     color: var(--white);
     letter-spacing: 1px;
+    font-size: 19px;
 }
 
 #fecha {
@@ -54,6 +55,7 @@ body {
     gap: 70px;
     padding: 10px;
     margin: 40px 0;
+    font-family: 'Stardew',sans-serif;
 }
 
 .agregar-tarea input {
@@ -71,6 +73,7 @@ body {
     color: rgb(83, 61, 61);
     font-weight: bold;
     opacity: 50%;
+    font-family: 'Stardew', sans-serif;
 }
 
 .agregar-tarea i {
@@ -85,34 +88,29 @@ body {
 
 /* CONSEJO */
 .consejo {
+    background-image: url(/img/mail.png); /* Cambia esta ruta a la imagen que quieres usar */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen dentro del contenedor */
     border-radius: 15px;
-    height: 150px;
-    display: column; /* Cambiado a flex para alinear el contenido centralizado */
+    height: 140px;
+    display: column; /* Mantiene el contenido centralizado */
     align-items: center;
     justify-content: center;
     padding: 19px;
     margin: 40px 0;
+    width: 400px;
 }
 
 .consejo h3 {
     position: relative;
-    margin-top: 15px;
-}
-.consejotext {
-    position: relative;
+    margin-top: 5px;
+    font-size: 25px;
 }
 
-.consejo img {
-    width: 400px;
-    height: 150px;
-    position: absolute;
-    margin-left: -15px;
-    margin-bottom: 15px;
-    background-position: center;
-    background-size: contain;
-    max-width: 100%;  /* Asegura que no se salga del contenedor */
-    /* Mantiene la proporción */
+.consejotext {
+    position: relative;
+    font-size: 19px;
 }
 
 /* SECCION DE TAREA */
@@ -130,12 +128,10 @@ body {
     color: var(--white);
     margin: 5px 0;
     background-color: rgb(29, 56, 212);
-    
 }
 
 .seccion-tarea i {
     font-size: 25px;
-
 }
 
 .seccion-tarea > ul p {
@@ -154,14 +150,14 @@ body {
 
 /* FONDOS POR HORA */
 .mañana {
-    background-image: url(/img/dia-pc.jpg);
-    color: black;
+    background-image: url(/img/dia-pc.png);
     background-size: cover;
     background-repeat: no-repeat;
+    color: black;
 }
 
 .tarde {
-    background-image: url(/img/dia-pc.jpg);
+    background-image: url(/img/dia-pc.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -173,94 +169,108 @@ body {
     background-repeat: no-repeat;
 }
 
-
-/*RESPONSIVE*/
+/* RESPONSIVE */
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
     .consejo {
-        width: 100%; /* Asegura que el contenedor ocupe el ancho completo en pantallas pequeñas */
-        height: 100px; /* Ajusta la altura para móviles si es necesario */
-        padding: 10px; /* Reduce el padding para pantallas pequeñas */
-        border-radius: 10px; /* Ajusta el radio del borde para móviles */
+        width: 100%;
+        height: 150px; /* Ajusta la altura según sea necesario */
+        padding: 10px;
+        border-radius: 10px;
+        background-size: cover; /* Asegura que la imagen se ajuste al nuevo tamaño */
+        background-position: center;
     }
     .consejo img {
-        
-        position: absolute;
-        margin-left: -15px;
-        margin-bottom: 15px;
-        background-position: center;
-
-        max-width: 100%;  /* Asegura que no se salga del contenedor */
-        /* Mantiene la proporción */
+        width: 300px;
+    }
+    body {
+        color: black;
+    }
+    .perfil span {
+        color: black;
+    }
+    .perfil h1 {
+        color: black;
+    }
+    #fecha {
+        color: black;
     }
     .mañana {
         background-image: url(/img/dia-cel.jpg);
         height: 100%;
         color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    
     .tarde {
         background-image: url(/img/dia-cel.jpg);
+        background-size: cover;
+        height: 100%;
+        background-repeat: no-repeat;
     }
-    
     .noche {
-        background-image: url(/img/noche-pc.png);
+        background-image: url(/img/noche-cel.jpg);
         color: black;
         background-size: cover;
         height: 100%;
         background-repeat: no-repeat;
-        height: 100%;
     }
     /* AGREGAR TAREA */
-.agregar-tarea {
-    background-image: url(/img/input.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    width: 100%;
-    height: 95px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    padding: 10px;
-    margin-top: 74px;
-    
-}
-
-.agregar-tarea input {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    border: none;
-    padding-left: 10px;
-    background-color: transparent;
-    outline: none; /* Elimina el borde de enfoque del navegador */
-}
-
-.agregar-tarea input::placeholder {
-    font-size: 1.1rem;
-    color: rgb(83, 61, 61);
-    font-weight: bold;
-    opacity: 50%;
-}
-
-.agregar-tarea i {
-    font-size: 50px;
-    color: var(--purple);
-}
-
-.agregar-tarea i:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
+    .agregar-tarea {
+        background-image: url(/img/input.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 95px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        padding: 10px;
+        margin-top: 74px;
+    }
+    .agregar-tarea input {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        border: none;
+        padding-left: 10px;
+        background-color: transparent;
+        outline: none; /* Elimina el borde de enfoque del navegador */
+    }
+    .agregar-tarea input::placeholder {
+        font-size: 1.1rem;
+        color: rgb(83, 61, 61);
+        font-weight: bold;
+        opacity: 50%;
+    }
+    .agregar-tarea i {
+        font-size: 50px;
+        color: var(--purple);
+    }
+    .agregar-tarea i:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .consejo img {
+        width: 600px;
+    }
 }
 
 @media (max-width: 480px) {
     .consejo {
-        height: 80px; /* Ajusta la altura para pantallas muy pequeñas */
+        height: 150px; /* Ajusta la altura para pantallas muy pequeñas */
         border-radius: 8px; /* Ajusta el radio del borde para pantallas más pequeñas */
-        padding: 8px; /* Reduce aún más el padding */
+        background-size: cover; /* Asegura que la imagen cubra todo el contenedor en pantallas pequeñas */
+        background-position: center;
+        font-family: 'Stardew', sans-serif;
     }
+}
+
+@font-face {
+    font-family: 'Stardew';
+    src: url('/stardew-item-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
