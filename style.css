@@ -156,10 +156,14 @@ body {
 .mañana {
     background-image: url(/img/dia-pc.jpg);
     color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .tarde {
     background-image: url(/img/dia-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .noche {
