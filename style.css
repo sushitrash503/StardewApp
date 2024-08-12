@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body {
+    height: 100%;
+    font-family: 'Stardew', sans-serif;
+    margin: 0;
+    background-image: url(/img/noche-pc.png);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: var(--white);
+    font-size: 25px;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -35px;
+    padding-bottom: 20px; /* Añade un pequeño padding inferior para espacio al final */
+}
+
+/* PERFIL */
+.perfil h1 {
+    color: var(--white);
+    font-size: 45px;
+    text-align: center; /* Centrar el título */
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+    font-size: 19px;
+    text-align: center; /* Centrar el texto */
+}
+
+#fecha {
+    color: var(--white);
+    padding: 50px 0 5px 0px;
+    text-align: center; /* Centrar la fecha */
+}
+
+/* AGREGAR TAREA */
+.agregar-tarea {
+    background-image: url(/img/input.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 95px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 40px auto; /* Centrando el contenedor */
+    font-family: 'Stardew', sans-serif;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none; /* Elimina el borde de enfoque del navegador */
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(83, 61, 61);
+    font-weight: bold;
+    opacity: 50%;
+    font-family: 'Stardew', sans-serif;
+}
+
+.agregar-tarea i {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* CONSEJO */
+.consejo {
+    background-image: url(/img/mail.png); /* Cambia esta ruta a la imagen que quieres usar */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 15px;
+    height: 140px;
+    display: column; /* Cambia de column a flex */
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    margin: 40px auto; /* Centrando el contenedor */
+    color: black;
+    width: 400px;
+    text-align: center; /* Centrar el texto */
+}
+
+.consejo h3 {
+    position: relative;
+    margin-top: 5px;
+    font-size: 25px;
+    color: black;
+}
+
+.consejotext {
+    position: relative;
+    font-size: 19px;
+    color: black;
+}
+
+/* SECCION DE TAREA */
+.seccion-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center; /* Centrar el título */
+}
+
+.seccion-tarea li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--white);
+    margin: 5px 0;
+    background-color: rgb(29, 56, 212);
+}
+
+.seccion-tarea i {
+    font-size: 25px;
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+}
+
+.seccion-tarea i:hover {
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
+
+/* FONDOS POR HORA */
+.mañana {
+    background-image: url(/img/dia-pc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.tarde {
+    background-image: url(/img/dia-pc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.noche {
+    background-image: url(/img/noche-pc.png);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.noche h1 {
+    color: white;
+}
+
+/* Personajes */
+.portrait {
+    background-image: url(/img/personajes/cuadro.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen horizontal y verticalmente */
+}
+
+.portrait img {
+    width: 140px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    background-image: url(/img/mail.png);
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.card img {
+    width: 89%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin: 20px auto; /* Centra el contenedor */
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    justify-items: center; /* Alinea las tarjetas en el centro */
+}
+
+.anuncio {
+    color: wheat;
+    padding: 20px;
+    display: flex; /* Asegura que el contenedor sea un flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Fondo */
+.fondo1 {
+    background-image: url(/img/dia-pc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo2 {
+    background-image: url(/img/dia-pc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+    .consejo {
+        width: 100%;
+        height: 150px; /* Ajusta la altura según sea necesario */
+        padding: 10px;
+        border-radius: 10px;
+        background-size: cover; /* Asegura que la imagen se ajuste al nuevo tamaño */
+        background-position: center;
+        color: black;
+        text-align: center; /* Centrar el texto */
+    }
+
+    .consejo img {
+        width: 100%; /* Ajustar el tamaño de la imagen */
+    }
+
+    .agregar-tarea {
+        margin-top: 74px;
+    }
+
+    .perfil span {
+        color: white;
+    }
+
+    .perfil h1 {
+        color: white;
+    }
+
+    #fecha {
+        color: white;
+    }
+
+    .cards {
+        width: 100%; /* Asegura que las cards ocupen el ancho completo */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+}
+
