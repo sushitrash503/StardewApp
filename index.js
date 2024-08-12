@@ -13,7 +13,7 @@ let id // para que inicie en 0 cada tarea tendra un id diferente
 //creacion de fecha actualizada 
 
 const FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
+fecha.innerHTML = FECHA.toLocaleDateString('es-ES',{weekday: 'long', month: 'short', day:'numeric'})
 
 
 
@@ -149,11 +149,11 @@ function cambiarFondoPorHora() {
     const cuerpo = document.body;
 
     if (horaActual >= 6 && horaActual < 12) {
-        cuerpo.className = 'mañana';
+        cuerpo.className = '000';
     } else if (horaActual >= 12 && horaActual < 18) {
-        cuerpo.className = 'tarde';
+        cuerpo.className = '000';
     } else {
-        cuerpo.className = 'noche';
+        cuerpo.className = '000';
     }
 }
 

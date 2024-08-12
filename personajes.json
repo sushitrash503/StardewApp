@@ -1,0 +1,131 @@
+{
+    "personajes": [
+      {
+        "nombre": "Abigail",
+        "me_gusta": ["Amatista", "Budín de plátano", "Sándwich de sashimi", "Pumpkin", "Spicy Eel"],
+        "me_encanta": ["Cuervo fantasma", "Galletas de chocolate", "Colágeno"],
+        "no_me_gusta": ["Pan", "Calabaza dorada"]
+      },
+      {
+        "nombre": "Alex",
+        "me_gusta": ["Repollo", "Completo", "Leche", "Completo Vegetariano"],
+        "me_encanta": ["Espaguetis", "Helado", "Completo"],
+        "no_me_gusta": ["Pan", "Zanahoria", "Rábano"]
+      },
+      {
+        "nombre": "Elliott",
+        "me_gusta": ["Vino", "Langosta", "Mejillón", "Granada"],
+        "me_encanta": ["Tartaleta de cangrejo", "Tom Yum", "Completo"],
+        "no_me_gusta": ["Mejillón", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Emily",
+        "me_gusta": ["Cuarzo", "Esmeralda", "Topacio", "Aguamarina", "Ágata"],
+        "me_encanta": ["Esmeralda", "Cuarzo", "Sopa picante"],
+        "no_me_gusta": ["Rábano", "Col de bruselas", "Papas fritas"]
+      },
+      {
+        "nombre": "Haley",
+        "me_gusta": ["Girasol", "Frutas", "Moras", "Fresas"],
+        "me_encanta": ["Pastel de fresa", "Mermelada de ciruela", "Completo"],
+        "no_me_gusta": ["Chicles", "Pan", "Rábano"]
+      },
+      {
+        "nombre": "Harvey",
+        "me_gusta": ["Seta morilla", "Café", "Manzana", "Miel"],
+        "me_encanta": ["Tartaleta de cangrejo", "Completo Vegetariano", "Carne asada"],
+        "no_me_gusta": ["Puré de papas", "Pan", "Rábano"]
+      },
+      {
+        "nombre": "Jas",
+        "me_gusta": ["Pétalos de rosa", "Fruta", "Moras", "Fresas"],
+        "me_encanta": ["Galletas", "Pastel de chocolate", "Completo Vegetariano"],
+        "no_me_gusta": ["Rábano", "Col de bruselas", "Zanahorias"]
+      },
+      {
+        "nombre": "Jodi",
+        "me_gusta": ["Lirio azul", "Frutas", "Moras", "Fresas"],
+        "me_encanta": ["Galletas", "Panecillo de arroz", "Carne asada"],
+        "no_me_gusta": ["Galletas", "Col de bruselas", "Zanahorias"]
+      },
+      {
+        "nombre": "Kent",
+        "me_gusta": ["Mejillón", "Frutas", "Moras", "Fresas"],
+        "me_encanta": ["Espaguetis", "Sándwich de sashimi", "Rollo de Sushi"],
+        "no_me_gusta": ["Chicles", "Pan", "Rábano"]
+      },
+      {
+        "nombre": "Leah",
+        "me_gusta": ["Vino", "Langosta", "Seta morilla", "Completo Vegetariano"],
+        "me_encanta": ["Amatista", "Panecillo de arroz", "Completo Vegetariano"],
+        "no_me_gusta": ["Zanahoria", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Lewis",
+        "me_gusta": ["Vino", "Completo", "Seta morilla", "Amatista"],
+        "me_encanta": ["Espaguetis", "Carne asada", "Completo"],
+        "no_me_gusta": ["Zanahoria", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Linus",
+        "me_gusta": ["Café", "Seta morilla", "Completo Vegetariano", "Moras"],
+        "me_encanta": ["Amatista", "Completo", "Carne asada"],
+        "no_me_gusta": ["Zanahoria", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Marnie",
+        "me_gusta": ["Frutas", "Langosta", "Seta morilla", "Completo"],
+        "me_encanta": ["Panecillo de arroz", "Carne asada", "Completo Vegetariano"],
+        "no_me_gusta": ["Rábano", "Zanahoria", "Galletas"]
+      },
+      {
+        "nombre": "Maru",
+        "me_gusta": ["Diamante", "Esmeralda", "Topacio", "Ágata"],
+        "me_encanta": ["Esmeralda", "Cuarzo", "Carne asada"],
+        "no_me_gusta": ["Rábano", "Col de bruselas", "Galletas"]
+      },
+      {
+        "nombre": "Pam",
+        "me_gusta": ["Vino", "Café", "Completo", "Seta morilla"],
+        "me_encanta": ["Panecillo de arroz", "Espaguetis", "Rollo de Sushi"],
+        "no_me_gusta": ["Zanahoria", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Penny",
+        "me_gusta": ["Esmeralda", "Diamante", "Panecillo de arroz", "Carne asada"],
+        "me_encanta": ["Galletas", "Panecillo de arroz", "Completo Vegetariano"],
+        "no_me_gusta": ["Rábano", "Zanahoria", "Galletas"]
+      },
+      {
+        "nombre": "Sam",
+        "me_gusta": ["Completo Vegetariano", "Frutas", "Moras", "Fresas"],
+        "me_encanta": ["Galletas", "Completo Vegetariano", "Carne asada"],
+        "no_me_gusta": ["Rábano", "Col de bruselas", "Zanahorias"]
+      },
+      {
+        "nombre": "Sebastian",
+        "me_gusta": ["Café", "Seta morilla", "Completo Vegetariano", "Amatista"],
+        "me_encanta": ["Galletas", "Panecillo de arroz", "Carne asada"],
+        "no_me_gusta": ["Zanahoria", "Rábano", "Galletas"]
+      },
+      {
+        "nombre": "Shane",
+        "me_gusta": ["Cerveza", "Pizza", "Completo Vegetariano", "Seta morilla"],
+        "me_encanta": ["Galletas", "Carne asada", "Panecillo de arroz"],
+        "no_me_gusta": ["Rábano", "Zanahoria", "Galletas"]
+      },
+      {
+        "nombre": "Vincent",
+        "me_gusta": ["Frutas", "Moras", "Fresas", "Galletas"],
+        "me_encanta": ["Galletas", "Panecillo de arroz", "Completo Vegetariano"],
+        "no_me_gusta": ["Rábano", "Col de bruselas", "Zanahorias"]
+      },
+      {
+        "nombre": "Willy",
+        "me_gusta": ["Langosta", "Mejillón", "Seta morilla", "Amatista"],
+        "me_encanta": ["Sashimi", "Carne asada", "Espaguetis"],
+        "no_me_gusta": ["Rábano", "Zanahoria", "Galletas"]
+      }
+    ]
+  }
+  
